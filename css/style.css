@@ -86,7 +86,7 @@
 			transform: scale(1.3);
 			transition-duration: 0.4s;
 		}
-		.twitterLink, .instagramLink, .githubLink, .linkedinLink, .facebookLink, .freeCodeCampLink, .WeChat {
+		.twitterLink, .instagramLink, .githubLink, .linkedinLink, .facebookLink, .wechat {
 			display: inline-block;
 			width: 50px;
 			height: 50px;
@@ -98,35 +98,41 @@
 			box-shadow: 0 0 10px white;
 		}
 		.twitterLink {
-			/*background-image: url("http://idge.staticworld.net/images/twitter.svg");*/
-			background-image: url("http://a4.mzstatic.com/us/r30/Purple/v4/cd/3a/40/cd3a40f3-f487-da12-ade3-455b90a0194a/icon_340.png");
+			background-image: url("../img/twitter-logo.png");
 			background-size: 100%; 
 		}
 		.instagramLink {
-			background-image: url("https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/14556518_1302033193164066_490265911046775615_o.png?oh=3639d66467978fce4062d46fef95a7d1&oe=58E3EE13");
+			background-image: url("../img/instagram-logo.png");
 			background-size: 100%;
 		}
 		.githubLink {
-			background-image: url("https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png");
+			background-image: url("../img/github-logo.png");
 			background-size: 100%; 
 		}
 		.linkedinLink {
-			/*background-image: url("http://idge.staticworld.net/images/linkedin.svg");*/
-			background-image: url("https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300");
+			background-image: url("../img/linkedin-logo.png");
 			background-size: 100%; 
 		}
 		.facebookLink {
-			background-image: url("https://www.facebook.com/images/fb_icon_325x325.png");
-			/*background-image: url("http://idge.staticworld.net/images/facebook.svg");*/
+			background-image: url("../img/facebook-logo.png");
 			background-size: 100%; 
 		}
-		.WeChat {
-			background-image: url("http://seeklogo.com/images/W/wechat-logo-80E2190E63-seeklogo.com.png");
+		.wechat {
+			background-image: url("../img/wechat-logo.png");
 			background-size: 100%; 
 		}
+	div#wechat {
+		width: 300px;
+		height: 400px;
+	    background-image: url("../img/QR.jpg");
+		background-size: 100%; 
+	    border-radius: 5px;
+	    position: absolute;
+	    display: none;
+	}
 .white-space-container, .about-container, .contact-container {
 	height: 80px; 
-	background-color: #ffffff; 
+	background-color: white; 
 	opacity: 0.8;
 	font-size: 35px; 
 	padding: 50px; 
@@ -222,12 +228,11 @@
 
 .bg-image2 { 
 	height: 3150px; 
-	/*background-image: url("http://cdn.paper4pc.com/images/serene-sky-hd-wallpaper-1.jpg");*/
 	background-image: url("../img/santa secret.jpg");
 	background-size: 100%; 
 }
 .parallax-container {
-	background-color: #000000; 
+	background-color: black; 
 	height: 400px; 
 	opacity: 0.4;
 }
@@ -241,7 +246,7 @@
 	}
 	.about-container .pic-container {
 		display: inline-block;
-		background-image: url("http://www.healthcareitnews.com/sites/default/files/start_up_illustration_2.jpg");
+		background-image: url("../img/aboutMe.jpg");
 		background-position: center; 
 		width: 40%;
 		height: 300px; 
@@ -271,7 +276,7 @@
 		}
 .parallax2-container {
 	height: 300px;
-	background-color: #000000;
+	background-color: black;
 	opacity: 0.4;
 }
 

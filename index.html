@@ -39,7 +39,21 @@
 					$(".bg-image2").css("background-position", `0px ${s*0.6}px`); 
 				}
 			})
-		});
+
+			$('.wechat').mouseenter(function() {
+		        $('#wechat').fadeIn('slow');
+		    })
+
+		    $('.wechat').mouseleave(function() {
+		        $('#wechat').hide();
+		    })
+
+			$('.wechat').mousemove(function(e) {
+		        let top = e.pageY - 410;
+		        let left = e.pageX - 150;
+		        $('#wechat').css({'top' : `${top}px`, 'left' : `${left}px`});
+		    })
+		})
 	</script>
 </head>
 <body>
@@ -69,13 +83,15 @@
 			<div class="link-container">
 				<a href="https://www.facebook.com" target="_blank"><div class="facebookLink"></div></a>
 				<a href="https://www.twitter.com" target="_blank"><div class="twitterLink"></div></a>
-				<a href="#" target="_blank"><div class="WeChat"></div></a>
+				<a><div class="wechat"></div></a>
 				<a href="https://www.instagram.com" target="_blank"><div class="instagramLink"></div></a>
 				<a href="https://github.com/Zhaoyubao" target="_blank"><div class="githubLink"></div></a>
-				<a href="https://www.linkedin.com" target="_blank"><div class="linkedinLink"></div></a>
+				<a href="https://ca.linkedin.com/in/yubao-zhao-58b577124" target="_blank"><div class="linkedinLink"></div></a>
 			</div>	
 		</div>
-		
+
+		<div id="wechat"></div>
+
 		<div class="white-space-container">
 			<h1><span>MY</span> PROJECTS</h1>
 		</div>
