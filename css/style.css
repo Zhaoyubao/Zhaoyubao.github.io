@@ -25,7 +25,7 @@
 		.nav-bar li {
 			padding: 20px 15px; 
 			display: inline-block;
-			font-family: "Varela Round";
+			font-family: 'Varela Round', sans-serif;
 			color: #eee;
 		}
 			.nav-bar li span {
@@ -44,7 +44,7 @@
 			text-align: center; 	 
 		}
 			.topHeader {
-				font-family: "Montserrat", "Arizonia", Arial;
+				font-family: 'Montserrat', sans-serif;
 				font-size: 200px; 
 			}
 			.portrait {
@@ -61,17 +61,17 @@
 				display: inline-block;
 			}
 		.midHeader {
-			font-family: "Josefin Slab"; 
+			font-family: 'Josefin Slab', serif; 
 			font-size: 120px; 
 			text-align: center; 
 		}
 		.bottomHeader {
-			font-family: "Josefin Slab";
+			font-family: 'Josefin Slab', serif;
 			font-size: 100px;
 			text-align: center; 
 		}
 			.bottomHeader span {
-				font-family: "Great Vibes";
+				font-family: 'Great Vibes', cursive;
 				font-size: 140px; 
 			}
 	.link-container {
@@ -130,7 +130,7 @@
 	opacity: 0.8;
 	font-size: 35px; 
 	padding: 50px; 
-	font-family: "Oswald";
+	font-family: 'Oswald', sans-serif;
 	text-align: center; 
 	padding-bottom: 100px; 
 }
@@ -254,7 +254,7 @@
 		width: 40%;
 		vertical-align: top; 
 		text-align: left;
-		font-family: "Josefin Slab"
+		font-family: 'Josefin Slab', serif;
 	}
 		.text-container p:nth-child(1) {
 			margin-bottom: 20px; 
