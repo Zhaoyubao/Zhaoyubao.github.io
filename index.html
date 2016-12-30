@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Portfolio</title>
+	<meta name="description" content="This is my portfolio">
+    <meta name="author" content="Yubao Zhao">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela Round">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arizonia">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great Vibes">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".homeButton").click(function(){
+				$("body").animate({scrollTop: $(".bg-image").position().top}, 500);
+			})
+
+			$(".projectsButton").click(function(){
+				$("body").animate({scrollTop: $(".white-space-container").position().top}, 800); 
+			})
+
+			$(".aboutButton").click(function(){
+				$("body").animate({scrollTop: $(".about-container").position().top}, 1400);
+			})
+
+			$(".contactButton").click(function(){
+				$("body").animate({scrollTop: $(".contact-container").position().top}, 1500);
+			})
+
+			$(document).scroll(function(){
+				let s = $(document).scrollTop(); 
+				$(".bg-image").css("background-position", `0px ${s*0.6}px`);
+			})
+
+			$(document).scroll(function(){
+				let s = $(document).scrollTop();
+				if (s > 1000) {	
+					$(".bg-image2").css("background-position", `0px ${s*0.6}px`); 
+				}
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="bg-image">
+			<div class="nav-bar-container">
+				<div class="nav-bar">
+					<ul>
+						<li><span class="homeButton">HOME</span></li>
+						<li>|</li>
+						<li><span class="projectsButton">PROJECTS</span></li>
+						<li>|</li>
+						<li><span class="aboutButton">ABOUT</span></li>
+						<li>|</li>
+						<li><span class="contactButton">CONTACT</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-container">
+				<div>
+					<h1 class="topHeader">HELL</h1>
+					<div class="portrait"></div>
+				</div>
+				<h2 class="midHeader">WELCOME TO</h2>
+				<h2 class="bottomHeader"><span>Yubao's</span>&nbsp; PORTFOLIO</h2>
+			</div>
+			<div class="link-container">
+				<a href="https://www.facebook.com" target="_blank"><div class="facebookLink"></div></a>
+				<a href="https://www.twitter.com" target="_blank"><div class="twitterLink"></div></a>
+				<a href="#" target="_blank"><div class="WeChat"></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="instagramLink"></div></a>
+				<a href="https://github.com/Zhaoyubao" target="_blank"><div class="githubLink"></div></a>
+				<a href="https://www.linkedin.com" target="_blank"><div class="linkedinLink"></div></a>
+			</div>	
+		</div>
+		
+		<div class="white-space-container">
+			<h1><span>MY</span> PROJECTS</h1>
+		</div>
+
+		<div class="bg-image2"> 
+			<div class="projects-container">
+				<div class="top-row">
+					<a href=""><div class="left projects"></div></a>
+					<a href=""><div class="mid projects"></div></a>
+					<a href=""><div class="right projects"></div></a>
+				</div>
+
+				<div class="mid-row">
+					<a href=""><div class="left projects"></div></a>
+					<a href=""><div class="mid projects"></div></a>
+					<a href=""><div class="right projects"></div></a>
+				</div>
+				
+				<div class="bot-row">
+					<a href=""><div class="left projects"></div></a>
+					<a href=""><div class="mid projects"></div></a>
+					<a href=""><div class="right projects"></div></a>
+				</div>
+			</div>
+
+		
+			<div class="parallax-container">
+				
+			</div>
+
+			<div class="about-container">
+				<h1>ABOUT <span>ME</span></h1>
+				<div class="pic-container">
+					
+				</div>
+				<div class="text-container">
+					<p>In 2016, I decided to change careers and pursue learning front-end and back-end web development.</p>
+					<p>At first, I started taking codingdojo's online bootcamp.</p>
+					<p>However, as I progressed, I realized I needed to take a <span class="text-primary">more concentrated effort</span> and signed up at codingdojo for a 14-week onsite bootcamp.</p>
+				</div>
+			</div>
+
+			<div class="parallax2-container">
+
+			</div>	
+
+			<div class="contact-container">
+				<h1><span>CONTACT</span> ME</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
