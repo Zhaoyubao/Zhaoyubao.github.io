@@ -30,7 +30,7 @@
 					color: white;
 					cursor: pointer;
 					line-height: 50px;
-					padding: 15px;
+					padding: 15.5px;
 					margin: 12px; 
 				}
 				.nav-bar li span:hover {
@@ -90,8 +90,8 @@
 			animation: logo-spin infinite 3s linear;
 		}
 		@keyframes logo-spin {
-			from { transform: rotate(0deg); }
-		    to { transform: rotate(360deg); }
+			from { transform: rotate(0deg) }
+		    to { transform: rotate(360deg) }
 		}
 		.twitterLink, .instagramLink, .githubLink, .linkedinLink, .facebookLink, .wechat {
 			display: inline-block;
@@ -102,7 +102,7 @@
 			margin-right: 10px;
 			vertical-align: top;
 			border: 2px solid white;
-			box-shadow: 0 0 10px white;
+			box-shadow: 0 0 16px white;
 		}
 		.twitterLink {
 			background-image: url("../img/twitter-logo.png");
@@ -134,6 +134,7 @@
 	    background-image: url("../img/QR.jpg");
 		background-size: 100%; 
 	    border-radius: 5px;
+	    box-shadow: 2px 2px 5px gray;
 	    position: absolute;
 	    display: none;
 	}
