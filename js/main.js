@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$(window).load(function() {
+		$(".preloader").fadeOut(800);
+	});
+
 	$(".homeButton").click(function() {
 		$("body").animate({scrollTop: $(".bg-image").position().top}, 1000);
 	})
@@ -15,20 +19,31 @@ $(document).ready(function() {
 		$("body").animate({scrollTop: $(".contact-container").position().top}, 1400);
 	})
 
+	let w = $(window).width();
+	$(window).resize(function() {
+		w = $(window).width();
+	})
+	$("div.nav-bar").on("click", "li", function() {
+		if(w < 768) $("button.navbar-toggle").trigger("click");
+	})
+
+	$(".scrollTop").click(function() {
+		$("body").animate({scrollTop: $(".bg-image").position().top}, 1000);
+	});
+
 	$(document).scroll(function() {
 		let s = $(document).scrollTop();
 		let nav = $(window).height() * 0.025;
-		let project = $(".white-space-container").position().top;
-		let about = $(".about-container").position().top;
-		let contact = $(".contact-container").position().top;
+		let project = $(".white-space-container").position().top - 1;
+		let about = $(".about-container").position().top - 1;
+		let contact = $(".contact-container").position().top - 1;
 		if(s < nav) {
-			$(".nav-bar-container").css({
-				"position": "relative",
-				"opacity": 0.5,				
-				"padding-top": "2.5vh"
+			$(".navbar").css({
+				"opacity": 0.5,
+				"background-color": "black",
+				"margin-top": "1.3vw"
 			});
-			$(".nav-bar").css("background-color", "black");
-			$(".nav-bar li").css({"color": "white", "background-color": "black", "padding": "1.6vh 1.6vw"}).addClass("hover");
+			$(".nav-bar li").css({"color": "white", "background-color": "black", "padding": "15px 1.8vw"}).addClass("hover");
 			$(".nav-bar").on("mouseenter", ".hover", function() {
 				$(this).css("color", "#ff5A00");
 			});
@@ -37,34 +52,41 @@ $(document).ready(function() {
 			});
 		}
 		if(s >= nav) {
-			$(".nav-bar-container").css({
-				"width": "100%",
-				"opacity": 0.65,
-				"position": "fixed",
-				"z-index": 100,
-				"padding-top": 0
+			if(w < 768)  $(".navbar").css("opacity", 1);
+			else  $(".navbar").css("opacity", 0.7);
+			$(".navbar").css({
+				"background-color": "white",
+				"margin-top": 0
 		    });
-			$(".nav-bar").css("background-color", "white");
-			$(".nav-bar li").css({"color": "black", "background-color": "white", "padding": "2.4vh 1.6vw"}).addClass("hover");
+			$(".nav-bar li").css({"color": "black", "background-color": "white", "padding": "20px 1.8vw"}).addClass("hover");
 			$(".nav-bar").on("mouseenter", ".hover", function() {
-				$(this).css({"color": "#ff5A00", "font-weight": "bold"});
+				$(this).css({"color": "#ff5A00"});
 			});
 			$(".nav-bar").on("mouseleave", ".hover", function() {
-				$(this).css({"color": "black", "font-weight": "normal"});
+				$(this).css({"color": "black"});
 			});
 
-			if(s >= project-5 && s < about) {
-				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s > nav && s < project) {
+				$(".navbar").css({"color": "black", "background-color": "white"});
+				$(".nav-bar li").addClass("hover");
+				$(".homeButton").css({"color": "white", "background-color": "#ff5A00"})
+					.removeClass("hover");
+			}
+			if(s >= project && s < about) {
+				$(".navbar").css({"color": "black", "background-color": "white"});
+				$(".nav-bar li").addClass("hover");
 				$(".projectsButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
-			if(s >= about-5 && s < contact) {
-				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s >= about && s < contact) {
+				$(".navbar").css({"color": "black", "background-color": "white"});
+				$(".nav-bar li").addClass("hover");
 				$(".aboutButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
-			if(s >= contact-5) {
-				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s >= contact) {
+				$(".navbar").css({"color": "black", "background-color": "white"});
+				$(".nav-bar li").addClass("hover");
 				$(".contactButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
@@ -79,7 +101,7 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 		let s = $(document).scrollTop();
 		if (s > 1000) {	
-			$(".bg-image2").css("background-position", `0px ${s*0.625}px`); 
+			$(".bg-image2").css("background-position", `0px ${s*0.65}px`); 
 		}
 	})
 

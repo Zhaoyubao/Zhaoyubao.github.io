@@ -7,87 +7,108 @@
 	<title>Portfolio</title>
 	<meta name="description" content="This is my portfolio">
     <meta name="author" content="Yubao Zhao">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab|Montserrat|Oswald|Varela+Round" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="bg-image">
-			<div class="nav-bar-container">
-				<div class="nav-bar">
-					<ul>
-						<li class="homeButton hover">HOME</li>
-						<li class="projectsButton hover">PROJECTS</li>
-						<li class="aboutButton hover">ABOUT</li>
-						<li class="contactButton hover">CONTACT</li>
-					</ul>
-				</div>
+	<div class="preloader"></div>
+	<div class="bg-image">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href=""></a> -->
 			</div>
-			<div class="header-container">
-				<div>
-					<h1 class="topHeader">HELL</h1>
-					<div class="portrait"></div>
-				</div>
-				<h2 class="midHeader">WELCOME TO</h2>
-				<h2 class="bottomHeader"><span>Yubao's</span>&nbsp; PORTFOLIO</h2>
+			<div class="nav-bar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="homeButton hover">HOME</li>
+					<li class="projectsButton hover">PROJECTS</li>
+					<li class="aboutButton hover">ABOUT</li>
+					<li class="contactButton hover">CONTACT</li>
+				</ul>
 			</div>
-			<div class="link-container">
-				<a href="https://www.facebook.com/yubao.zhao.12" target="_blank"><div class="facebookLink"></div></a>
-				<a href="https://twitter.com/zhaoyubao1981" target="_blank"><div class="twitterLink"></div></a>
-				<a><div class="wechat"></div></a>
-				<a href="https://www.instagram.com/zhaoyubao/" target="_blank"><div class="instagramLink"></div></a>
-				<a href="https://github.com/Zhaoyubao" target="_blank"><div class="githubLink"></div></a>
-				<a href="https://ca.linkedin.com/in/yubao-zhao-58b577124" target="_blank"><div class="linkedinLink"></div></a>
-			</div>	
+		</nav>
+		<div class="header-container">
+			<div>
+				<p class="topHeader">HELL</p>
+				<div class="portrait"></div>
+			</div>
+			<p class="midHeader">WELCOME TO</p>
+			<p class="bottomHeader"><span>Yubao's</span>&nbsp; PORTFOLIO</p>
 		</div>
-		<div id="wechat"></div>
+		<div class="link-container">
+			<a href="https://www.facebook.com/yubao.zhao.12" target="_blank"><div class="facebookLink"></div></a>
+			<a href="https://twitter.com/zhaoyubao1981" target="_blank"><div class="twitterLink"></div></a>
+			<a><div class="wechat"></div></a>
+			<a href="https://www.instagram.com/zhaoyubao/" target="_blank"><div class="instagramLink"></div></a>
+			<a href="https://github.com/Zhaoyubao" target="_blank"><div class="githubLink"></div></a>
+			<a href="https://ca.linkedin.com/in/yubao-zhao-58b577124" target="_blank"><div class="linkedinLink"></div></a>
+		</div>	
+	</div>
+	<div id="wechat"></div>
 
-		<div class="white-space-container">
-			<h1><span>MY</span> PROJECTS</h1>
+	<div class="white-space-container">
+		<p><span>MY</span> PROJECTS</p>
+	</div>
+
+	<div class="bg-image2"> 
+		<div class="projects-container">
+			<div class="top-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+			<div class="mid-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+			<div class="bot-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+		</div>
+	
+		<div class="parallax-container">
 		</div>
 
-		<div class="bg-image2"> 
-			<div class="projects-container">
-				<div class="top-row">
-					<a href=""><div class="left projects"></div></a>
-					<a href=""><div class="mid projects"></div></a>
-					<a href=""><div class="right projects"></div></a>
-				</div>
-				<div class="mid-row">
-					<a href=""><div class="left projects"></div></a>
-					<a href=""><div class="mid projects"></div></a>
-					<a href=""><div class="right projects"></div></a>
-				</div>
-				<div class="bot-row">
-					<a href=""><div class="left projects"></div></a>
-					<a href=""><div class="mid projects"></div></a>
-					<a href=""><div class="right projects"></div></a>
-				</div>
+		<div class="about-container">
+			<h1>ABOUT <span>ME</span></h1>
+			<div class="pic-container">
 			</div>
-		
-			<div class="parallax-container">
+			<div class="text-container">
+				<p>In 2016, I decided to change careers and pursue learning front-end and back-end web development.</p>
+				<p>At first, I started taking codingdojo's online bootcamp.</p>
+				<p>However, as I progressed, I realized I needed to take a <span>more concentrated effort</span> and signed up at codingdojo for a 14-week onsite bootcamp.</p>
 			</div>
+		</div>
 
-			<div class="about-container">
-				<h1>ABOUT <span>ME</span></h1>
-				<div class="pic-container">
-				</div>
-				<div class="text-container">
-					<p>In 2016, I decided to change careers and pursue learning front-end and back-end web development.</p>
-					<p>At first, I started taking codingdojo's online bootcamp.</p>
-					<p>However, as I progressed, I realized I needed to take a <span>more concentrated effort</span> and signed up at codingdojo for a 14-week onsite bootcamp.</p>
-				</div>
-			</div>
+		<div class="parallax2-container">
+		</div>	
 
-			<div class="parallax2-container">
-			</div>	
-
-			<div class="contact-container">
-				<h1><span>CONTACT</span> ME</h1>
-			</div>
+		<div class="contact-container">
+			<p><span>CONTACT</span> ME</p>
 		</div>
 	</div>
+	<!-- Footer -->
+	<footer class="text-center">
+        Copyright &copy; &nbsp;Yubao Zhao &nbsp;&nbsp;2017
+    </footer>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="visible-xs visible-sm">
+        <!-- <button type="button" class="btn btn-primary btn-lg"> -->
+    	<span class="scrollTop glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+        <!-- </button> -->
+    </div>
 </body>
 </html>
