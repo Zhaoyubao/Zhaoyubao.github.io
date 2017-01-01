@@ -17,17 +17,18 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		let s = $(document).scrollTop();
+		let nav = $(window).height() * 0.025;
 		let project = $(".white-space-container").position().top;
 		let about = $(".about-container").position().top;
 		let contact = $(".contact-container").position().top;
-		if(s < 20) {
+		if(s < nav) {
 			$(".nav-bar-container").css({
 				"position": "relative",
 				"opacity": 0.5,				
-				"padding-top": "20px"
+				"padding-top": "2.5vh"
 			});
 			$(".nav-bar").css("background-color", "black");
-			$(".nav-bar li span").css({"color": "white", "background-color": "black"}).addClass("hover");
+			$(".nav-bar li").css({"color": "white", "background-color": "black", "padding": "1.6vh 1.6vw"}).addClass("hover");
 			$(".nav-bar").on("mouseenter", ".hover", function() {
 				$(this).css("color", "#ff5A00");
 			});
@@ -35,7 +36,7 @@ $(document).ready(function() {
 				$(this).css("color", "white");
 			});
 		}
-		if(s >= 20) {
+		if(s >= nav) {
 			$(".nav-bar-container").css({
 				"width": "100%",
 				"opacity": 0.65,
@@ -44,7 +45,7 @@ $(document).ready(function() {
 				"padding-top": 0
 		    });
 			$(".nav-bar").css("background-color", "white");
-			$(".nav-bar li span").css({"color": "black", "background-color": "white"}).addClass("hover");
+			$(".nav-bar li").css({"color": "black", "background-color": "white", "padding": "2.4vh 1.6vw"}).addClass("hover");
 			$(".nav-bar").on("mouseenter", ".hover", function() {
 				$(this).css({"color": "#ff5A00", "font-weight": "bold"});
 			});
@@ -52,18 +53,18 @@ $(document).ready(function() {
 				$(this).css({"color": "black", "font-weight": "normal"});
 			});
 
-			if(s >= project && s < about) {
-				$(".nav-bar li span").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s >= project-5 && s < about) {
+				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
 				$(".projectsButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
-			if(s >= about && s < contact) {
-				$(".nav-bar li span").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s >= about-5 && s < contact) {
+				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
 				$(".aboutButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
-			if(s >= contact) {
-				$(".nav-bar li span").css({"color": "black", "background-color": "white"}).addClass("hover");
+			if(s >= contact-5) {
+				$(".nav-bar li").css({"color": "black", "background-color": "white"}).addClass("hover");
 				$(".contactButton").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
@@ -91,8 +92,10 @@ $(document).ready(function() {
     })
 
 	$('.wechat').mousemove(function(e) {
-        let top = e.pageY - 420;
-        let left = e.pageX - 150;
+		let w = $("#wechat").width();
+		let h = $("#wechat").height();
+        let top = e.pageY - h * 1.05;
+        let left = e.pageX - w * 0.5;
         $('#wechat').css({'top' : `${top}px`, 'left' : `${left}px`});
     })
 })
