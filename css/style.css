@@ -156,18 +156,20 @@
 .white-space-container, .about-container, .contact-container {
 	opacity: 0.9;
 	background-color: white; 
-	font-size: calc(4 * 1.5vw/2); 
 	font-family: 'Oswald', sans-serif;
 	text-align: center; 
-	padding-top: 55px; 
+	padding-top: 45px; 
 }
-	.white-space-container {
-		text-align: center; 
-		padding-bottom: 1.8vw; 
+div > h1 {
+	font-size: calc(4 * 1.5vw/2); 
+}
+.white-space-container {
+	text-align: center; 
+	padding-bottom: 1.8vw; 
+}
+	.white-space-container span, .about-container span, .contact-container span {
+		color: #ff5A00;
 	}
-		.white-space-container span, .about-container span, .contact-container span {
-			color: #ff5A00;
-		}
 .projects-container {
 	opacity: 0.9;
 	height: calc(100vh - 55px - (4 * 1.5vw/2) - 1.8vw);
@@ -225,8 +227,8 @@
 	background-size: 100%; 
 }
 .parallax-container {
-	height: 40vh; 
-	opacity: 0.4;
+	height: 30vh; 
+	opacity: 0.5;
 	background-color: black; 
 }
 .about-container {
@@ -262,26 +264,36 @@
 			margin-bottom: 5vh; 
 		}
 .parallax2-container {
-	height: 40vh;
-	opacity: 0.4;
+	height: 30vh;
+	opacity: 0.5;
 	background-color: black;
 }
 .contact-container {
 	opacity: 0.9;
-	padding-bottom: 2.5vw;
+	padding-bottom: 1vw;
 }
+	.contact-container h1 {
+		margin-bottom: 1vw
+	}
+	.contact-container p {
+		color: black;
+		font-size: 1.5em;
+	}
+		.contact-container p span {
+			font-size: 1em;
+		}
 footer {
 	margin: 1.5vw 0;
 }
 .scrollTop {
-	padding: 20px;
+	padding: 15px;
 	color: white;
 	background-color: #FFA500;
 	font-weight: bold;
 	border-radius: 50%;
 	cursor: pointer;
 	position: fixed;
-	top: calc(100vh - 80px);
+	top: calc(100vh - 60px);
 	left: calc(100vw - 60px);
 	z-index: 100;
 }
