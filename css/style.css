@@ -281,7 +281,7 @@ footer {
 	border-radius: 50%;
 	cursor: pointer;
 	position: fixed;
-	top: calc(100vh - 80px);
+	top: calc(100vh - 110px);
 	left: calc(100vw - 80px);
 	z-index: 100;
 }
