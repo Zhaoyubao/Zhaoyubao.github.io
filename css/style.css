@@ -281,8 +281,8 @@ footer {
 	border-radius: 50%;
 	cursor: pointer;
 	position: fixed;
-	top: calc(100vh - 110px);
-	left: calc(100vw - 80px);
+	top: calc(100vh - 80px);
+	left: calc(100vw - 40px);
 	z-index: 100;
 }
 .scrollTop:hover {
