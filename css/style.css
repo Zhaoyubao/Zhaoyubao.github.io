@@ -282,7 +282,7 @@ footer {
 	cursor: pointer;
 	position: fixed;
 	top: calc(100vh - 80px);
-	left: calc(100vw - 40px);
+	left: calc(100vw - 60px);
 	z-index: 100;
 }
 .scrollTop:hover {
