@@ -61,15 +61,16 @@
 	}
 		.topHeader {
 			font-family: 'Montserrat', sans-serif;
-			font-size: calc(12 * (1.5vw)/2); 
-			margin-top: 4vw;
+			font-size: calc(12 * 1.5vw/2); 
+			margin-top: 10vh;
 		}
 		.portrait {
-			width: calc(9 * (1.5vw)/2);
-			height: calc(9 * (1.5vw)/2);
+			width: calc(9 * 1.5vw/2);
+			height: calc(9 * 1.5vw/2);
 			background-color: white;
 			border-radius: 50%;
 			background-image: url("../img/logo/yubao.jpg");
+			background-repeat: no-repeat;
 			background-size: 100%;
 			border: calc(1.5 * 1.5vw/2) solid white;
 			box-shadow: 0 0 0.6vw #eee;
@@ -91,7 +92,7 @@
 			}
 	.link-container {
 		text-align: right;
-		margin-top: 2vw;
+		margin-top: 4vh;
 		margin-right: 5vw;
 	}
 		.link-container a div {
@@ -109,42 +110,37 @@
 		}
 		.twitterLink, .instagramLink, .githubLink, .linkedinLink, .facebookLink, .wechat {
 			display: inline-block;
-			width: 3.3vw;
-			height: 3.3vw;
+			width: 45px;
+			height: 45px;
 			border-radius: 50%;
 			margin-left: 0.7vw;
 			margin-right: 0.7vw;
 			vertical-align: top;
 			border: 2px solid white;
 			box-shadow: 0 0 1vw white;
+			background-size: 100%; 
 		}
 		.twitterLink {
 			background-image: url("../img/logo/twitter-logo.png");
-			background-size: 100%; 
 		}
 		.instagramLink {
 			background-image: url("../img/logo/instagram-logo.png");
-			background-size: 100%;
 		}
 		.githubLink {
 			background-image: url("../img/logo/github-logo.png");
-			background-size: 100%; 
 		}
 		.linkedinLink {
 			background-image: url("../img/logo/linkedin.png");
-			background-size: 100%; 
 		}
 		.facebookLink {
 			background-image: url("../img/logo/facebook-logo.png");
-			background-size: 100%; 
 		}
 		.wechat {
 			background-image: url("../img/logo/wechat-logo.png");
-			background-size: 100%; 
 		}
 	div#wechat {
-		width: 21.5vw;
-		height: calc(1.323 * 21.5vw);
+		width: 220px;
+		height: calc(1.323 * 220px);
 	    background-image: url("../img/logo/QR.jpg");
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -160,9 +156,6 @@
 	text-align: center; 
 	padding-top: 45px; 
 }
-div > h1 {
-	font-size: calc(4 * 1.5vw/2); 
-}
 .white-space-container {
 	text-align: center; 
 	padding-bottom: 1.8vw; 
@@ -172,57 +165,49 @@ div > h1 {
 	}
 .projects-container {
 	opacity: 0.9;
-	height: calc(100vh - 55px - (4 * 1.5vw/2) - 1.8vw);
+	height: calc(100vh - 45px - (4 * 1.5vw/2) - 1.8vw);
 	background-color: white;
 	text-align: center;
 }
-	.top-row, .mid-row, .bot-row {
-		padding: 1vw 2vw; 
+	.projects-container .projects {
+		background-size: 85%; 
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
 	}
-		.top-row a, .mid-row a, .bot-row a {
-			margin: 0 4vw; 
-		}
-			.projects-container .projects {
-				width: 10vw;
-				height: 10vw;
-				background-size: 85%; 
-				background-repeat: no-repeat;
-				background-position: center;
-				display: inline-block;
-			}
-			.top-row .left {
-				background-image: url("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2470/s300/cd-logo-blue-600x600.png");
-			}
-			.top-row .mid {
-				background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png");
-			}
-			.top-row .right {
-				background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png");
-			}
-			.mid-row .left {
-				background-image: url("http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-512.png");
-			}
-			.mid-row .mid {
-				background-image: url("http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png");
-			}
-			.mid-row .right {
-				background-image: url("https://www.djangoproject.com/m/img/logos/django-logo-positive.png");
-			}
-			.bot-row .left {
-				background-image: url("http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2015/10/Microsoft_.NET_Logo.svg_-930x886.png");
-			}
-			.bot-row .mid {
-				background-image: url("http://www.logospike.com/wp-content/uploads/2016/05/Csharp_Logo_03.png");
-			}
-			.bot-row .right {
-				background-image: url("https://i.imgur.com/fINuUV1.jpg");
-				background-size: 100%; 
-			}
-			.projects-container a:hover {
-				outline: 2px solid #FFA500; 
-			}
+	.top-row .left {
+		background-image: url("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2470/s300/cd-logo-blue-600x600.png");
+	}
+	.top-row .mid {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png");
+	}
+	.top-row .right {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png");
+	}
+	.mid-row .left {
+		background-image: url("http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-512.png");
+	}
+	.mid-row .mid {
+		background-image: url("http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png");
+	}
+	.mid-row .right {
+		background-image: url("https://www.djangoproject.com/m/img/logos/django-logo-positive.png");
+	}
+	.bot-row .left {
+		background-image: url("http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2015/10/Microsoft_.NET_Logo.svg_-930x886.png");
+	}
+	.bot-row .mid {
+		background-image: url("http://www.logospike.com/wp-content/uploads/2016/05/Csharp_Logo_03.png");
+	}
+	.bot-row .right {
+		background-image: url("https://i.imgur.com/fINuUV1.jpg");
+		background-size: 100%; 
+	}
+	.projects:hover {
+		outline: 2px solid #FFA500; 
+	}
 .bg-image2 { 
-	height: 365vh; 
+	height: 362vh; 
 	background-image: url("../img/santa secret.jpg");
 	background-size: 100%; 
 }
@@ -236,7 +221,6 @@ div > h1 {
 	opacity: 0.9;
 }	
 	.about-container h1 {
-		font-size: calc(4 * 1.5vw/2);
 		margin-bottom: 10vh; 
 	}
 	.about-container .pic-container {
@@ -250,18 +234,13 @@ div > h1 {
 	.about-container .text-container {
 		width: 40%;
 		font-family: 'Josefin Slab', serif;
-		font-size: calc(2.8 * 1.5vw/2);
 		font-weight: 550;
 		text-align: left;
 		display: inline-block;
 		vertical-align: top; 
 	}
-		.text-container p:nth-child(1) {
-			margin-bottom: 5vh; 
-		}
-		.text-container p:nth-child(2) {
-			margin-top: 5vh; 
-			margin-bottom: 5vh; 
+		.text-container p {
+			margin-bottom: 15px; 
 		}
 .parallax2-container {
 	height: 30vh;
@@ -293,10 +272,114 @@ footer {
 	border-radius: 50%;
 	cursor: pointer;
 	position: fixed;
-	top: calc(100vh - 60px);
+	top: calc(100vh - 55px);
 	left: calc(100vw - 60px);
 	z-index: 100;
 }
 .scrollTop:hover {
 	background-color: #cb8607;
+}
+/* media queries */
+@media (min-width: 1030px) {
+  	.projects {
+		width: 10vw;
+		height: 10vw;
+		margin: 1vw 4vw;
+	}
+	.text-container {
+		font-size: calc(2.8 * 1.5vw/2);
+	}
+	h1 {
+		font-size: calc(4 * 1.5vw/2); 
+	}
+}
+@media (max-width: 1030px) {
+	.projects {
+		width: 16vw;
+		height: 16vw;
+		margin: 1.5vw 4vw;
+	}
+	.text-container p {
+		font-size: 2em;
+	}
+	h1 {
+		font-size: 2.4em; 
+	}
+}
+@media (max-width: 770px) {
+	.projects {
+		width: 20vw;
+		height: 20vw;
+		margin: 4vw 2vw;
+	}
+	.text-container p {
+		font-size: 1.6em;
+	}
+	.about-container {
+		height: 130vh;
+	}
+	.bg-image2 { 
+		height: 395vh; 
+	}
+	h1 {
+		font-size: 2em; 
+	}
+}
+@media (max-width: 737px) {
+	.white-space-container, .about-container, .contact-container {
+		padding-top: 30px;
+	}
+	.projects-container {
+		height: 120vh;
+	}
+	.projects {
+		width: 18vw;
+		height: 18vw;
+		margin: 2vw 4vw;
+	}
+	.text-container p {
+		font-size: 1.5em;
+	}
+	.about-container {
+		height: 125vh;
+	}
+	.bg-image2 { 
+		height: 400vh; 
+	}
+	.parallax-container, .parallax2-container {
+		height: 0;
+	}
+	h1 {
+		font-size: 1.8em; 
+	}
+}
+@media (max-width: 420px) {
+	.projects-container {
+		height: 100vh;
+	}
+	.projects {
+		width: 25vw;
+		height: 25vw;
+		margin: 8vw 2vw;
+	}
+	.text-container p {
+		font-size: 1.5em;
+	}
+	.about-container {
+		height: 100vh;
+	}
+	.bg-image2 { 
+		height: 295vh; 
+	}
+}
+@media (max-width: 380px) {
+	.text-container p {
+		font-size: 1.2em;
+	}
+	.about-container {
+		height: 120vh;
+	}
+	.bg-image2 { 
+		height: 315vh; 
+	}
 }

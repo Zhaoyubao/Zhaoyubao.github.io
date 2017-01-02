@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		let s = $(document).scrollTop();
-		if (s > 1000) {	
+		if (s > 900) {	
 			$(".bg-image2").css("background-position", `0px ${s*0.65}px`); 
 		}
 	})
