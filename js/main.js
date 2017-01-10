@@ -38,10 +38,11 @@ $(document).ready(function() {
 		let about = $(".about-container").position().top - 1;
 		let contact = $(".contact-container").position().top - 1;
 		if(s < nav) {
-			$(".navbar").css({
+			$("nav.navbar").css({
 				"opacity": 0.5,
 				"background-color": "black",
-				"margin-top": "1.3vw"
+				"margin-top": "1.3vw",
+				"box-shadow": "none"
 			});
 			$(".nav-bar li").css({"color": "white", "background-color": "black", "padding": "15px 1.8vw"}).addClass("hover");
 			$(".nav-bar").on("mouseenter", ".hover", function() {
@@ -52,8 +53,9 @@ $(document).ready(function() {
 			});
 		}
 		if(s >= nav) {
-			if(w < 768)  $(".navbar").css("opacity", 1);
-			else  $(".navbar").css("opacity", 0.7);
+			// if(w < 768)  $(".navbar").css("opacity", 1);
+			$("nav.navbar").css("opacity", 1);
+			$("nav.navbar").css("box-shadow", "0 2px 4px #ddd");
 			$(".navbar").css({
 				"background-color": "white",
 				"margin-top": 0

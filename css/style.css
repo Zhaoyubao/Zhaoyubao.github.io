@@ -12,19 +12,30 @@
 	background-image: url("../img/seattle.jpg");
 	background-size: cover; 
 }
-	.navbar { 
+	nav.navbar { 
 		opacity: 0.5;
 		background-color: black;
 		font-size: 1.1em;
 		border: none;
 		margin-top: 1.3vw;
 		z-index: 10;
+		transition: all linear 0.3s;
+		-webkit-transition: all linear 0.3s;
+		-moz-transition: all linear 0.3s;
 	}
+		span.navbar-brand {
+			color: white !important;
+			font-size: 1.2em;
+			margin-left: 10px;
+		}
 		.nav-bar li {
 			color: white;
 			font-family: 'Varela Round', sans-serif;
 			cursor: pointer;
 			padding: 15px 1.8vw;
+			transition: all ease 0.3s;
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
 		}
 		.nav-bar li:last-of-type {
 			margin-right: 5vw;
@@ -61,18 +72,18 @@
 	}
 		.topHeader {
 			font-family: 'Montserrat', sans-serif;
-			font-size: calc(12 * 1.5vw/2); 
+			font-size: 9vw; 
 			margin-top: 10vh;
 		}
 		.portrait {
-			width: calc(9 * 1.5vw/2);
-			height: calc(9 * 1.5vw/2);
+			width: 6.75vw;
+			height: 6.75vw;
 			background-color: white;
 			border-radius: 50%;
 			background-image: url("../img/logo/yubao.jpg");
 			background-repeat: no-repeat;
 			background-size: 100%;
-			border: calc(1.5 * 1.5vw/2) solid white;
+			border: 1.1vw solid white;
 			box-shadow: 0 0 0.6vw #eee;
 		}
 		.topHeader, .portrait {
@@ -80,15 +91,15 @@
 		}
 		.midHeader {
 			font-family: 'Josefin Slab', serif; 
-			font-size: calc(8 * 1.5vw/2);
+			font-size: 6vw;
 		}
 		.bottomHeader {
 			font-family: 'Josefin Slab', serif;
-			font-size: calc(7 * 1.5vw/2);
+			font-size: 5vw;
 		}
 			.bottomHeader span {
 				font-family: 'Great Vibes', cursive;
-				font-size: calc(10 * 1.5vw/2); 
+				font-size: 7.5vw; 
 			}
 	.link-container {
 		text-align: right;
@@ -140,7 +151,7 @@
 		}
 	div#wechat {
 		width: 220px;
-		height: calc(1.323 * 220px);
+		height: 291px;
 	    background-image: url("../img/logo/QR.jpg");
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -165,7 +176,7 @@
 	}
 .projects-container {
 	opacity: 0.9;
-	height: calc(100vh - 45px - (4 * 1.5vw/2) - 1.8vw);
+	height: calc(100vh - 45px - 4.8vw);
 	background-color: white;
 	text-align: center;
 }
@@ -207,7 +218,7 @@
 		outline: 2px solid #FFA500; 
 	}
 .bg-image2 { 
-	height: 362vh; 
+	height: 364vh; 
 	background-image: url("../img/santa secret.jpg");
 	background-size: 100%; 
 }
@@ -221,17 +232,18 @@
 	opacity: 0.9;
 }	
 	.about-container h1 {
-		margin-bottom: 10vh; 
+		margin-bottom: 5vh; 
 	}
-	.about-container .pic-container {
+	.pic-container {
 		width: 35vw;
-		height: calc(35vw * 0.45); 
+		height: 15.75vw; 
 		background-image: url("../img/aboutMe.jpg");
 		background-size: contain; 
 		background-repeat: no-repeat;
+		margin-top: 2vh;
 		display: inline-block;
 	}
-	.about-container .text-container {
+	.text-container {
 		width: 40%;
 		font-family: 'Josefin Slab', serif;
 		font-weight: 550;
@@ -249,7 +261,7 @@
 }
 .contact-container {
 	opacity: 0.9;
-	padding-bottom: 1vw;
+	padding-bottom: 0.5vw;
 }
 	.contact-container h1 {
 		margin-bottom: 1vw
@@ -262,7 +274,7 @@
 			font-size: 1em;
 		}
 footer {
-	margin: 1.5vw 0;
+	margin: 1vw 0;
 }
 .scrollTop {
 	padding: 15px;
@@ -287,10 +299,10 @@ footer {
 		margin: 1vw 4vw;
 	}
 	.text-container {
-		font-size: calc(2.8 * 1.5vw/2);
+		font-size: 2.1vw;
 	}
 	h1 {
-		font-size: calc(4 * 1.5vw/2); 
+		font-size: 3vw; 
 	}
 }
 @media (max-width: 1030px) {
@@ -306,7 +318,10 @@ footer {
 		font-size: 2.4em; 
 	}
 }
-@media (max-width: 770px) {
+@media (max-width: 767px) {
+	.nav-bar li:last-of-type {
+			margin-right: 0;
+	}
 	.projects {
 		width: 20vw;
 		height: 20vw;
@@ -338,7 +353,7 @@ footer {
 		margin: 2vw 4vw;
 	}
 	.text-container p {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.about-container {
 		height: 125vh;
@@ -353,6 +368,16 @@ footer {
 		font-size: 1.8em; 
 	}
 }
+@media (max-width: 670px) {
+	.text-container p {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 570px) {
+	.text-container p {
+		font-size: 1em;
+	}
+}
 @media (max-width: 420px) {
 	.projects-container {
 		height: 100vh;
@@ -362,24 +387,33 @@ footer {
 		height: 25vw;
 		margin: 8vw 2vw;
 	}
-	.text-container p {
-		font-size: 1.5em;
+	.pic-container {
+		display: none;
 	}
 	.about-container {
 		height: 100vh;
 	}
+		.text-container {
+			width: 70%;
+		}
+			.text-container p {
+				font-size: 1.5em;
+			}
 	.bg-image2 { 
-		height: 295vh; 
+		height: 296.3vh; 
 	}
 }
 @media (max-width: 380px) {
-	.text-container p {
-		font-size: 1.2em;
-	}
 	.about-container {
 		height: 120vh;
 	}
+		.text-container {
+			width: 70%;
+		}
+			.text-container p {
+				font-size: 1.4em;
+			}
 	.bg-image2 { 
-		height: 315vh; 
+		height: 316vh; 
 	}
 }
