@@ -2,41 +2,25 @@ $(document).ready(function() {
 	$(window).load(function() {
 		$(".preloader").fadeOut(800);
 	});
-
-	$(".homeButton").click(function() {
-		$("body").animate({scrollTop: $(".bg-image").position().top}, 1000);
+ 	// Page scrolling feature
+	$(".nav li").click(function() {
+		$("body").stop().animate({scrollTop: $('.'+$(this).attr('id')).offset().top}, 1250, 'easeInOutExpo');
 	})
-
-	$(".projectsButton").click(function() {
-		$("body").animate({scrollTop: $(".white-space-container").position().top}, 800); 
-	})
-
-	$(".aboutButton").click(function() {
-		$("body").animate({scrollTop: $(".about-container").position().top}, 1200);
-	})
-
-	$(".contactButton").click(function() {
-		$("body").animate({scrollTop: $(".contact-container").position().top}, 1400);
-	})
-
-	let w = $(window).width();
-	$(window).resize(function() {
-		w = $(window).width();
-	})
-	$("div.nav-bar").on("click", "li", function() {
-		if(w < 768) $("button.navbar-toggle").trigger("click");
+ 	// Closes the Responsive Menu on Menu Item Click
+	$(".navbar-collapse ul li").click(function() {
+		$(".navbar-toggle:visible").click();
 	})
 
 	$(".scrollTop").click(function() {
-		$("body").animate({scrollTop: $(".bg-image").position().top}, 1000);
+		$("body").animate({scrollTop: $(".home").offset().top}, 1200, 'easeInOutExpo');
 	});
 
 	$(document).scroll(function() {
 		let s = $(document).scrollTop();
 		let nav = $(window).height() * 0.025;
-		let project = $(".white-space-container").position().top - 1;
-		let about = $(".about-container").position().top - 1;
-		let contact = $(".contact-container").position().top - 1;
+		let project = $(".projects").offset().top - 1;
+		let about = $(".about").offset().top - 1;
+		let contact = $(".contact").offset().top - 1;
 		if(s < nav) {
 			$("nav.navbar").css({
 				"opacity": 0.5,
@@ -53,10 +37,9 @@ $(document).ready(function() {
 			});
 		}
 		if(s >= nav) {
-			// if(w < 768)  $(".navbar").css("opacity", 1);
-			$("nav.navbar").css("opacity", 1);
-			$("nav.navbar").css("box-shadow", "0 2px 4px #ddd");
 			$(".navbar").css({
+				"opacity": 1,
+				"box-shadow": "0 2px 4px #ddd",
 				"background-color": "white",
 				"margin-top": 0
 		    });
@@ -68,28 +51,23 @@ $(document).ready(function() {
 				$(this).css({"color": "black"});
 			});
 
+			$(".navbar").css({"color": "black", "background-color": "white"});
+			$(".nav-bar li").addClass("hover");
+
 			if(s > nav && s < project) {
-				$(".navbar").css({"color": "black", "background-color": "white"});
-				$(".nav-bar li").addClass("hover");
-				$(".homeButton").css({"color": "white", "background-color": "#ff5A00"})
+				$("#home").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
 			if(s >= project && s < about) {
-				$(".navbar").css({"color": "black", "background-color": "white"});
-				$(".nav-bar li").addClass("hover");
-				$(".projectsButton").css({"color": "white", "background-color": "#ff5A00"})
+				$("#projects").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
 			if(s >= about && s < contact) {
-				$(".navbar").css({"color": "black", "background-color": "white"});
-				$(".nav-bar li").addClass("hover");
-				$(".aboutButton").css({"color": "white", "background-color": "#ff5A00"})
+				$("#about").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
 			if(s >= contact) {
-				$(".navbar").css({"color": "black", "background-color": "white"});
-				$(".nav-bar li").addClass("hover");
-				$(".contactButton").css({"color": "white", "background-color": "#ff5A00"})
+				$("#contact").css({"color": "white", "background-color": "#ff5A00"})
 					.removeClass("hover");
 			}
 		}

@@ -7,12 +7,12 @@
   z-index: 100;
   background: url(../img/preloader.gif) center no-repeat #ffffff;
 }
-.bg-image {	
+.home {	
 	height: 105vh;  
 	background-image: url("../img/seattle.jpg");
 	background-size: cover; 
 }
-	nav.navbar { 
+	.navbar { 
 		opacity: 0.5;
 		background-color: black;
 		font-size: 1.1em;
@@ -23,7 +23,7 @@
 		-webkit-transition: all linear 0.3s;
 		-moz-transition: all linear 0.3s;
 	}
-		span.navbar-brand {
+		.navbar-brand {
 			color: white !important;
 			font-size: 1.2em;
 			margin-left: 10px;
@@ -33,9 +33,9 @@
 			font-family: 'Varela Round', sans-serif;
 			cursor: pointer;
 			padding: 15px 1.8vw;
-			transition: all ease 0.3s;
-			-webkit-transition: all ease 0.3s;
-			-moz-transition: all ease 0.3s;
+			transition: all ease 0.4s;
+			-webkit-transition: all ease 0.4s;
+			-moz-transition: all ease 0.4;
 		}
 		.nav-bar li:last-of-type {
 			margin-right: 5vw;
@@ -160,18 +160,18 @@
 	    position: absolute;
 	    display: none;
 	}
-.white-space-container, .about-container, .contact-container {
+.projects, .about, .contact {
 	opacity: 0.9;
 	background-color: white; 
 	font-family: 'Oswald', sans-serif;
 	text-align: center; 
 	padding-top: 45px; 
 }
-.white-space-container {
+.projects {
 	text-align: center; 
 	padding-bottom: 1.8vw; 
 }
-	.white-space-container span, .about-container span, .contact-container span {
+	.projects span, .about span, .contact span {
 		color: #ff5A00;
 	}
 .projects-container {
@@ -180,7 +180,7 @@
 	background-color: white;
 	text-align: center;
 }
-	.projects-container .projects {
+	.projects-container .project {
 		background-size: 85%; 
 		background-repeat: no-repeat;
 		background-position: center;
@@ -214,7 +214,7 @@
 		background-image: url("https://i.imgur.com/fINuUV1.jpg");
 		background-size: 100%; 
 	}
-	.projects:hover {
+	.project:hover {
 		outline: 2px solid #FFA500; 
 	}
 .bg-image2 { 
@@ -227,11 +227,11 @@
 	opacity: 0.5;
 	background-color: black; 
 }
-.about-container {
+.about {
 	height: 100vh;
 	opacity: 0.9;
 }	
-	.about-container h1 {
+	.about h1 {
 		margin-bottom: 5vh; 
 	}
 	.pic-container {
@@ -259,18 +259,18 @@
 	opacity: 0.5;
 	background-color: black;
 }
-.contact-container {
+.contact {
 	opacity: 0.9;
 	padding-bottom: 0.5vw;
 }
-	.contact-container h1 {
+	.contact h1 {
 		margin-bottom: 1vw
 	}
-	.contact-container p {
+	.contact p {
 		color: black;
 		font-size: 1.5em;
 	}
-		.contact-container p span {
+		.contact p span {
 			font-size: 1em;
 		}
 footer {
@@ -293,7 +293,7 @@ footer {
 }
 /* media queries */
 @media (min-width: 1030px) {
-  	.projects {
+  	.project {
 		width: 10vw;
 		height: 10vw;
 		margin: 1vw 4vw;
@@ -306,7 +306,7 @@ footer {
 	}
 }
 @media (max-width: 1030px) {
-	.projects {
+	.project {
 		width: 16vw;
 		height: 16vw;
 		margin: 1.5vw 4vw;
@@ -322,7 +322,7 @@ footer {
 	.nav-bar li:last-of-type {
 			margin-right: 0;
 	}
-	.projects {
+	.project {
 		width: 20vw;
 		height: 20vw;
 		margin: 4vw 2vw;
@@ -330,7 +330,7 @@ footer {
 	.text-container p {
 		font-size: 1.6em;
 	}
-	.about-container {
+	.about {
 		height: 130vh;
 	}
 	.bg-image2 { 
@@ -341,13 +341,13 @@ footer {
 	}
 }
 @media (max-width: 737px) {
-	.white-space-container, .about-container, .contact-container {
+	.projects, .about, .contact {
 		padding-top: 30px;
 	}
 	.projects-container {
 		height: 120vh;
 	}
-	.projects {
+	.project {
 		width: 18vw;
 		height: 18vw;
 		margin: 2vw 4vw;
@@ -355,7 +355,7 @@ footer {
 	.text-container p {
 		font-size: 1.3em;
 	}
-	.about-container {
+	.about {
 		height: 125vh;
 	}
 	.bg-image2 { 
@@ -382,7 +382,7 @@ footer {
 	.projects-container {
 		height: 100vh;
 	}
-	.projects {
+	.project {
 		width: 25vw;
 		height: 25vw;
 		margin: 8vw 2vw;
@@ -390,7 +390,7 @@ footer {
 	.pic-container {
 		display: none;
 	}
-	.about-container {
+	.about {
 		height: 100vh;
 	}
 		.text-container {
@@ -404,7 +404,7 @@ footer {
 	}
 }
 @media (max-width: 380px) {
-	.about-container {
+	.about {
 		height: 120vh;
 	}
 		.text-container {

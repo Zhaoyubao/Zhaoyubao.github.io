@@ -11,13 +11,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab|Montserrat|Oswald|Varela+Round" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
 	<div class="preloader"></div>
-	<div class="bg-image">
+	<div class="home">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -30,10 +32,10 @@
 			</div>
 			<div class="nav-bar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="homeButton hover">HOME</li>
-					<li class="projectsButton hover">PROJECTS</li>
-					<li class="aboutButton hover">ABOUT</li>
-					<li class="contactButton hover">CONTACT</li>
+					<li class="hover" id="home">HOME</li>
+					<li class="hover" id="projects">PROJECTS</li>
+					<li class="hover" id="about">ABOUT</li>
+					<li class="hover" id="contact">CONTACT</li>
 				</ul>
 			</div>
 		</nav>
@@ -56,46 +58,46 @@
 	</div>
 	<div id="wechat"></div>
 
-	<div class="white-space-container">
+	<div class="projects">
 		<h1><span>MY</span> PROJECTS</h1>
 	</div>
 
 	<div class="bg-image2"> 
 		<div class="projects-container">
 			<div class="top-row">
-				<a href=""><div class="left projects"></div></a>
-				<a href=""><div class="mid projects"></div></a>
-				<a href=""><div class="right projects"></div></a>
+				<a href=""><div class="left project"></div></a>
+				<a href=""><div class="mid project"></div></a>
+				<a href=""><div class="right project"></div></a>
 			</div>
 			<div class="mid-row">
-				<a href=""><div class="left projects"></div></a>
-				<a href=""><div class="mid projects"></div></a>
-				<a href=""><div class="right projects"></div></a>
+				<a href=""><div class="left project"></div></a>
+				<a href=""><div class="mid project"></div></a>
+				<a href=""><div class="right project"></div></a>
 			</div>
 			<div class="bot-row">
-				<a href=""><div class="left projects"></div></a>
-				<a href=""><div class="mid projects"></div></a>
-				<a href=""><div class="right projects"></div></a>
+				<a href=""><div class="left project"></div></a>
+				<a href=""><div class="mid project"></div></a>
+				<a href=""><div class="right project"></div></a>
 			</div>
 		</div>
 	
 		<div class="parallax-container">
 		</div>
 
-		<div class="about-container">
+		<div class="about">
 			<h1>ABOUT <span>ME</span></h1>
 			<div class="pic-container"></div>
 			<div class="text-container">
-				<p>In 2016, I decided to change careers and pursued learning new technologies and programming languages in web development.</p>
+				<p>In 2016, I decided to change careers and pursued learning new technologies and programming languages in <span>web development</span>.</p>
 				<p>I recently graduated from CodingDojo, an intensive 14-week coding bootcamp where I learned <span>3 full stacks</span> in web development(Python, MEAN, ASP.NET Core).</p>
-				<p>I have a great passion in coding and I'm looking forward to finding a job either in <span>front-end</span> or <span>back-end</span>.</p>
+				<p>I have a great passion in coding and I'm seeking junior <span>front-end</span> or <span>back-end</span> web development role.</p>
 			</div>
 		</div>
 
 		<div class="parallax2-container">
 		</div>	
 
-		<div class="contact-container">
+		<div class="contact">
 			<h1><span>CONTACT</span> ME</h1>
 			<p><span class="glyphicon glyphicon-envelope"></span> &nbsp;zhaoyubao1981@gmail.com</p>
 			<p><span class="glyphicon glyphicon-phone"></span> &nbsp;(604)-440-8651</p>
