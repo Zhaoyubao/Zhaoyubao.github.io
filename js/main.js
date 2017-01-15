@@ -4,7 +4,7 @@ $(document).ready(function() {
 	});
  	// Page scrolling feature
 	$(".nav li").click(function() {
-		$("body").stop().animate({scrollTop: $('.'+$(this).attr('id')).offset().top}, 1250, 'easeInOutExpo');
+		$("body").stop().animate({scrollTop: $("."+$(this).attr("id")).offset().top}, 1250, "easeInOutExpo");
 	})
  	// Closes the Responsive Menu on Menu Item Click
 	$(".navbar-collapse ul li").click(function() {
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	})
 
 	$(".scrollTop").click(function() {
-		$("body").animate({scrollTop: $(".home").offset().top}, 1200, 'easeInOutExpo');
+		$("body").animate({scrollTop: $(".home").offset().top}, 1200, "easeInOutExpo");
 	});
 
 	$(document).scroll(function() {

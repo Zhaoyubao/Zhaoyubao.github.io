@@ -9,7 +9,7 @@
 }
 .home {	
 	height: 105vh;  
-	background-image: url("../img/seattle.jpg");
+	background-image: url(../img/seattle.jpg);
 	background-size: cover; 
 }
 	.navbar { 
@@ -95,12 +95,12 @@
 		}
 		.bottomHeader {
 			font-family: 'Josefin Slab', serif;
-			font-size: 5vw;
+			font-size: 4.5vw;
 		}
-			.bottomHeader span {
+			/*.bottomHeader span {
 				font-family: 'Great Vibes', cursive;
 				font-size: 7.5vw; 
-			}
+			}*/
 	.link-container {
 		text-align: right;
 		margin-top: 4vh;
