@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		let s = $(document).scrollTop(); 
-		$(".bg-image").css("background-position", `0px ${s*0.6}px`);
+		$(".home").css("background-position", `0px ${s*0.6}px`);
 	})
 
 	$(document).scroll(function() {
